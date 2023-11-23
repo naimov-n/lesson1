@@ -1,0 +1,30 @@
+{% extends 'index/base.html' %}
+
+
+{% block content %}
+	<main id="main">
+
+			<div class="wrapper">
+				<h2>Editing:</h2>
+
+				<form>
+					<div class="form-group">
+						<label for="characterName">Name</label>
+						<input type="text" class="form-control" name="name" id="characterName" placeholder="Enter Character's Full name" value="">
+					</div>
+					<div class="form-group">
+						<label for="characterEyeColor">Hair Color</label>
+						<input type="text" class="form-control" id="characterEyeColor" name="hair_color" placeholder="Hair Color" value="">
+					</div>
+					<div class="form-group">
+						<label for="characterEyeColor">Eye Color</label>
+						<input type="text" class="form-control" id="characterEyeColor" name="eye_color" placeholder="Eye Color" value="">
+					</div>
+					<button type="submit" class="btn btn-primary btn--save">Save</button>
+				</form>
+
+
+			</div>
+		</main>
+
+{% endblock %}

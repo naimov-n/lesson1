@@ -1,0 +1,54 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+body {
+  background-image: url("https://miro.medium.com/max/2400/1*EWc8lNuE5hoh76XWZ7nEsQ.jpeg");
+}
+
+table {
+  background-color: white;
+}
+
+h1, h2 {
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+.imgH {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  width: 25%;
+}
+
+.wrapper {
+  max-width: 80vw;
+  margin: 10vh auto;
+}
+
+table tfoot {
+  display: none;
+}
+
+table tfoot img {
+  margin: 10px 0;
+  width: 100%;
+}
+
+tbody:empty + tfoot {
+  display: table-footer-group;
+  width: 100%;
+}
+
+
+.create_btn{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+}

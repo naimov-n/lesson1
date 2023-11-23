@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'index/css/main.css' %}">
+    <title>{{ title }}</title>
+</head>
+<body>
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--  Meta  -->
+	<meta charset="UTF-8" />
+	<title>{{ title }}</title>
+	<!--  Styles  -->
+	<link rel="stylesheet" async
+		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'index/css/main.css' %}">
+</head>
+
+<body>
+{% block content %}
+
+
+{% endblock %}
+
+
+	<!-- Scripts -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.7.3/localforage.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+	<script src="data/seed.js"></script>
+	<script type="module" src="scripts/components/table.js"></script>
+	<script type="module" src="data/db.js"></script>
+	<script type="module" src="scripts/index.js"></script>
+</body>
+
+</html>

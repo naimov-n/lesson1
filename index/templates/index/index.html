@@ -1,0 +1,35 @@
+{% extends 'index/base.html' %}
+{% load static %}
+
+{% block content %}
+   	<main id="main">
+        <div class="create_btn">
+            <a href="/create/" class="btn btn-danger">Create</a>
+        </div>
+		<div class="wrapper">
+
+			<table id="character-table" class="table table-bordered table-hover table-striped ">
+				<thead>
+					<tr>
+						<th scope="col">Name</th>
+						<th scope="col">Hair Color</th>
+						<th scope="col">Eye Color</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody id="tbody"></tbody>
+				<tfoot class="center">
+
+					<tr>
+						<td colspan="4">
+							<h3 class="text-center">There are no records here!</h3>
+
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+	</main>
+
+
+{% endblock %}
